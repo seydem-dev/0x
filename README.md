@@ -1,27 +1,27 @@
 # Verify Signature
-**f**
+**Verify Signature is a contract for which enables signing messages from crypto wallet pop ups, such as Metamask. Note that the verification signature is cost free.**
 
 ```
-f
+verify()
 ```
 *f*
 
 ```
-f
+getMessageHash()
 ```
 *f*
 
 ```
-f
+getEthSignedMessageHash()
 ```
 *f*
 
 ```
-f
+recover()
 ```
 *f*
 
 ```
-f
+_split()
 ```
 *f*
