@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.0;
 
+error InvalidSignature();
+
 contract VerifySig {
 
     function verify(address signer, string memory message, bytes memory sig) external pure returns (bool) {
