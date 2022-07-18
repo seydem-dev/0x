@@ -24,7 +24,7 @@ contract VerifySig {
     }
 
     function _split(bytes memory sig) private pure returns (bytes32 r, bytes32 s, uint8 v) {
-        require(sig.length == 65, "Invalid signature length");
+        if (sig.length != 65) revert InvalidSignature();
         assembly {
             r := mload(add(sig, 32))
             s := mload(add(sig, 64))
