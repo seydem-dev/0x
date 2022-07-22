@@ -1,27 +1,27 @@
 # Verify Signature
-**Verify Signature is a contract for which enables signing messages from crypto wallet pop ups, such as Metamask. Note that the verification signature is cost free.**
+**Verify Signature is a contract for signing messages from wallet pop ups (such as Metamask). All verification signature functions don't cost any gas.**
 
 ```
 verify()
 ```
-*f*
+*Funtion takes in a signer and a signature and makes sure that both are valid. Returns true if passed, else false.*
 
 ```
 getMessageHash()
 ```
-*f*
+*Returns hash of parameter `message`*
 
 ```
 getEthSignedMessageHash()
 ```
-*f*
+*Returns the actual signed hash with a prefix (prefix is added and then hashed again to get the final hash).*
 
 ```
 recover()
 ```
-*f*
+*Takes `ethSignedMessage` and `_sig` and recover the signer from the two inputs.*
 
 ```
 _split()
 ```
-*f*
+*Splits `_sig` from `recover()` into `r`, `s`, and `v` of `recover()`*
